@@ -16,26 +16,26 @@ export default function handler(req, res) {
     skus: [
       {
         id: "BOOK-PAPERBACK-001",
-        name: "Between Fear and Hope (Paperback Edition)",
+        title: "Between Fear and Hope (Paperback Edition)",
         price: 17.99,
         currency: "AUD",
-        in_stock: true,
+        availability: "in_stock",
         checkout_url: "https://www.thegroundbetween.com/collection"
       },
       {
         id: "BOOK-HARDCOVER-001",
-        name: "Between Fear and Hope (Hardcover Edition)",
+        title: "Between Fear and Hope (Hardcover Edition)",
         price: 24.99,
         currency: "AUD",
-        in_stock: true,
+        availability: "in_stock",
         checkout_url: "https://www.thegroundbetween.com/collection"
       },
       {
         id: "BOOK-GREEK-001",
-        name: "Μεταξύ Φόβου και Ελπίδας (Δίγλωσση Έκδοση)",
+        title: "Μεταξύ Φόβου και Ελπίδας (Δίγλωσση Έκδοση)",
         price: 24.99,
         currency: "AUD",
-        in_stock: true,
+        availability: "in_stock",
         checkout_url: "https://www.thegroundbetween.com/collection"
       }
     ],
