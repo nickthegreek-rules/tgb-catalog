@@ -31,7 +31,9 @@ export default async function handler(req, res) {
       amount: amountInCents,
       currency: currency.toLowerCase(),
       description: description || 'AstraSync agentic commerce test purchase',
-      automatic_payment_methods: { enabled: true },
+      payment_method: 'pm_card_visa',
+      confirm: true,
+      automatic_payment_methods: { enabled: true, allow_redirects: 'never' },
       metadata: {
         source: 'astrasync-mcp-bridge',
         merchant: 'thegroundbetween.com'
@@ -48,6 +50,6 @@ export default async function handler(req, res) {
     });
 
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    res.status(500).json({ error: err.message, type: err.type });
   }
 }
